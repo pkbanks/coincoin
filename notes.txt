@@ -1,0 +1,15 @@
+
+mock-up pages with dummy data
+  mobile-small
+  mobile-large
+  desktop
+
+  
+
+create a class that
+  connects with CryptoCompare API
+    returns coin quotes in a hash
+
+create a sinatra file that routes to content file
+
+integrate with crypto class
