@@ -50,6 +50,12 @@ class Crypto
     return @@base_url
   end
 
+  def self.refresh
+    @@coins_data = HTTParty.get(@@coin_info_endpoint)["Data"]
+    @@price_data = HTTParty.get(@@price_info_endpoint)
+    @@price_detail = HTTParty.get(@@price_detail_endpoint)
+  end
+
   def initialize(coin_symbol)
     # coin_symbol (String)
     #   example: Crypto.new("BTC")

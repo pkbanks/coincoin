@@ -11,6 +11,10 @@ main {
   font-size: 70px;
 }
 
+.row {
+  padding: 25px 20px;
+}
+
 .wrapper li.row {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
