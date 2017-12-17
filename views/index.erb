@@ -13,7 +13,14 @@
     <main>
       <ul>
         <% @data.each do |coin| %>
-          <li><div><%= "#{coin.data["FullName"]}" %></div><div><%= "#{coin.price}" %></div></li>
+          <li>
+            <div><%= "#{coin.data["FullName"]}" %></div>
+            <div><%= "#{sprintf('%.2f',coin.price_detail_raw["PRICE"])}"%>
+            </div>
+            <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
+            </div>
+            <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %></div>
+          </li>
         <% end %>
       </ul>
     </main>

@@ -1,4 +1,4 @@
-@symbol="BTC"
+@symbol="BTC",
 
 @data={
   "Id"=>"1182",
@@ -15,6 +15,37 @@
   "PreMinedValue"=>"N/A",
   "TotalCoinsFreeFloat"=>"N/A",
   "SortOrder"=>"1",
-  "Sponsored"=>false}
+  "Sponsored"=>false
+},
 
-@price_data=19134.84
+@price=19169.03,
+
+@price_detail={
+  "FROMSYMBOL"=>"Ƀ",
+  "TOSYMBOL"=>"$",
+  "MARKET"=>"CryptoCompare Index",
+  "PRICE"=>"$ 19,169.0",
+  "LASTUPDATE"=>"Just now",
+  "LASTVOLUME"=>"Ƀ 0.3819",
+  "LASTVOLUMETO"=>"$ 7,279.57",
+  "LASTTRADEID"=>"128340805",
+  "VOLUMEDAY"=>"Ƀ 95,862.1",
+  "VOLUMEDAYTO"=>"$ 1,852,011,411.3",
+  "VOLUME24HOUR"=>"Ƀ 111,683.3",
+  "VOLUME24HOURTO"=>"$ 2,158,737,885.1",
+  "OPENDAY"=>"$ 19,346.4",
+  "HIGHDAY"=>"$ 19,870.6",
+  "LOWDAY"=>"$ 18,750.9",
+  "OPEN24HOUR"=>"$ 19,221.0",
+  "HIGH24HOUR"=>"$ 19,877.7",
+  "LOW24HOUR"=>"$ 18,691.8",
+  "LASTMARKET"=>"Bitfinex",
+  "CHANGE24HOUR"=>"$ -51.95",
+  "CHANGEPCT24HOUR"=>"-0.27",
+  "CHANGEDAY"=>"$ -177.39",
+  "CHANGEPCTDAY"=>"-0.92",
+  "SUPPLY"=>"Ƀ 16,747,925.0",
+  "MKTCAP"=>"$ 321.04 B",
+  "TOTALVOLUME24H"=>"Ƀ 387.39 K",
+  "TOTALVOLUME24HTO"=>"$ 7,443.85 M"
+}

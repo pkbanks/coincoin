@@ -13,7 +13,11 @@ class Crypto
   # note USD is hard-coded as the to-currency
   @@price_info_endpoint = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=#{@@coins.join(',')}&tsyms=USD"
 
+  @@price_detail_endpoint = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=#{@@coins.join(',')}&tsyms=USD"
+
   @@price_data = HTTParty.get(@@price_info_endpoint)
+
+  @@price_detail = HTTParty.get(@@price_detail_endpoint)
 
   def self.payload
     result = []
@@ -38,6 +42,10 @@ class Crypto
     return @@price_data
   end
 
+  def self.price_detail
+    return @@price_detail
+  end
+
   def self.base_url
     return @@base_url
   end
@@ -48,6 +56,8 @@ class Crypto
     @symbol = coin_symbol.upcase
     @data = Crypto.coins_data[coin_symbol]
     @price = Crypto.price_data[coin_symbol]["USD"]
+    @price_detail = Crypto.price_detail["DISPLAY"][coin_symbol]["USD"]
+    @price_detail_raw = Crypto.price_detail["RAW"][coin_symbol]["USD"]
   end
 
   def data
@@ -61,6 +71,15 @@ class Crypto
   def price
     @price
   end
+
+  def price_detail
+    @price_detail
+  end
+
+  def price_detail_raw
+    @price_detail_raw
+  end
+
 end
 
-p Crypto.payload
+p Crypto.payload[0]
