@@ -8,6 +8,7 @@ header {
 
 main {
   background-color: #e6ffcc;
+  font-size: 30px;
 }
 
 footer {
@@ -16,4 +17,24 @@ footer {
 
 li {
   
+}
+
+li:nth-child(odd) {
+    background-color: #FFF;
+}
+li:nth-child(even) {
+    background-color: #ccffcc;
+}
+
+
+.row {
+  border-bottom: 3px solid #595959;
+}
+
+.font-large {
+
+}
+
+.font-small {
+  font-size: 50%;
 }

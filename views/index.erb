@@ -13,9 +13,10 @@
     <main>
       <ul>
         <% @data.each do |coin| %>
-          <li>
-            <div><%= "#{coin.data["FullName"]}" %></div>
-            <div><%= "#{sprintf('%.2f',coin.price_detail_raw["PRICE"])}"%>
+          <li class="row">
+            <div class="font-large"><%= "#{coin.data["Name"]}" %></div>
+            <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
+            <div><%= "#{coin.price_detail["PRICE"]}"%>
             </div>
             <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
             </div>
