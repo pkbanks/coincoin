@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+  <title>CryptoMarkets</title>
+</head>
+<body>
+  <div class="container">
+    <header>header</header>
+    <main>
+      <ul>
+        <% @data.each do |coin| %>
+          <li><div><%= "#{coin.data["FullName"]}" %></div><div><%= "#{coin.price}" %></div></li>
+        <% end %>
+      </ul>
+    </main>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>

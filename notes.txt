@@ -4,7 +4,7 @@ mock-up pages with dummy data
   mobile-large
   desktop
 
-  
+  normalize css
 
 create a class that
   connects with CryptoCompare API

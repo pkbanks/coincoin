@@ -1,0 +1,20 @@
+@symbol="BTC"
+
+@data={
+  "Id"=>"1182",
+  "Url"=>"/coins/btc/overview",
+  "ImageUrl"=>"/media/19633/btc.png",
+  "Name"=>"BTC",
+  "Symbol"=>"BTC",
+  "CoinName"=>"Bitcoin",
+  "FullName"=>"Bitcoin (BTC)",
+  "Algorithm"=>"SHA256",
+  "ProofType"=>"PoW",
+  "FullyPremined"=>"0",
+  "TotalCoinSupply"=>"21000000",
+  "PreMinedValue"=>"N/A",
+  "TotalCoinsFreeFloat"=>"N/A",
+  "SortOrder"=>"1",
+  "Sponsored"=>false}
+
+@price_data=19134.84
