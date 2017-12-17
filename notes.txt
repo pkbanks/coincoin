@@ -13,3 +13,11 @@ create a class that
 create a sinatra file that routes to content file
 
 integrate with crypto class
+
+
+-- heroku --
+  https://devcenter.heroku.com/articles/rack
+  
+  Gemfile  <-- ** remember to bundle **
+  config.ru
+  Procfile
