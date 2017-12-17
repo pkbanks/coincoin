@@ -47,6 +47,14 @@ li {
   padding-top: 20px;
 }
 
+.pad-right-10 {
+  padding-right: 10px;
+}
+
+.pad-right-20 {
+  padding-right: 20px;
+}
+
 li:nth-child(odd) {
     background-color: #FFF;
 }
