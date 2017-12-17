@@ -8,15 +8,43 @@ header {
 
 main {
   background-color: #e6ffcc;
-  font-size: 30px;
+  font-size: 70px;
 }
+
+.wrapper li.row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+}
+
+.left-col {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.mid-col {
+  grid-column-start: 2;
+  grid-column-start: 3;
+}
+
+.rows-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
 
 footer {
   background-color: blue;
 }
 
 li {
-  
+}
+
+.pad-top-10 {
+  padding-top: 10px;
+}
+
+.pad-top-20 {
+  padding-top: 20px;
 }
 
 li:nth-child(odd) {
@@ -31,8 +59,20 @@ li:nth-child(even) {
   border-bottom: 3px solid #595959;
 }
 
-.font-large {
+.bold {
+  font-weight: bold;
+}
 
+.align-right {
+  text-align: right;
+}
+
+.font-large {
+  font-size: 100%;
+}
+
+.font-med {
+  font-size: 75%;
 }
 
 .font-small {

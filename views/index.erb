@@ -11,19 +11,25 @@
   <div class="container">
     <header>header</header>
     <main>
-      <ul>
-        <% @data.each do |coin| %>
-          <li class="row">
-            <div class="font-large"><%= "#{coin.data["Name"]}" %></div>
-            <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
-            <div><%= "#{coin.price_detail["PRICE"]}"%>
-            </div>
-            <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
-            </div>
-            <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %></div>
-          </li>
-        <% end %>
-      </ul>
+      <div class="wrapper">
+        <ul>
+          <% @data.each do |coin| %>
+            <li class="row">
+              <div class="left-col rows-2">
+                <div class="font-large"><%= "#{coin.data["Name"]}" %></div>
+                <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
+              </div>
+              <div class="font-med align-right bold pad-top-20"><%= "#{coin.price_detail["PRICE"]}"%>
+              </div>
+              <div class="font-small align-right pad-top-10">
+                <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
+                </div>
+                <div class="pad-top-10"><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>    <!-- /.wrapper -->
     </main>
     <footer>footer</footer>
   </div>
