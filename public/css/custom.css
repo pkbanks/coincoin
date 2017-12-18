@@ -92,6 +92,10 @@ li.row {
   padding-top: 25px;
 }
 
+.pad-right-5 {
+  padding-right: 5px;
+}
+
 .pad-right-10 {
   padding-right: 10px;
 }
@@ -149,4 +153,39 @@ li:nth-child(even) {
 
 .font-small {
   font-size: 50%;
+}
+
+.med-screen {
+  /*visibility: hidden;*/
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  
+  li.row {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    /*height: 150%;*/
+  }
+
+  .left-col {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .mid-col {
+    grid-column-start: 3;
+    grid-column-start: 4;
+  }
+
+  .med-screen {
+    display: inline;
+  }
+
+  img {
+    width: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+
 }

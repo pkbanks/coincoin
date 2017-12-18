@@ -19,13 +19,14 @@
         <ul>
           <% @data.each do |coin| %>
             <li class="row">
+              <div class="med-screen"><img src="<%= "#{@base_url + coin.data["ImageUrl"]}" %>"/></div>
               <div class="left-col rows-2 pad-left-20 pad-top-5 pad-bottom-5">
                 <div class="font-large bold"><%= "#{coin.data["Name"]}" %></div>
                 <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
               </div>
               <div class="font-med align-right bold pad-top-15 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
               </div>
-              <div class="font-med align-right pad-right-10 pad-top-5 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
+              <div class="font-med align-right pad-right-5 pad-top-5 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
                 <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
                 </div>
                 <div class=""><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>

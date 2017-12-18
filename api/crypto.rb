@@ -2,7 +2,7 @@ require 'httparty'
 
 class Crypto
 
-  @@base_url = "https://www.cryptocompare.com/"
+  @@base_url = "https://www.cryptocompare.com"
 
   @@coins = ["BTC","ETH","BCH","XRP","LTC","ADA","IOT","DASH","XEM","XMR","BTG","XLM","EOS","NEO","ETC","TRX","BCCOIN","QTUM","PPT","OMG"]
 
