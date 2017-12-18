@@ -25,9 +25,9 @@
                 <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
               </div>
               <div class="med-screen col-2 align-right pad-top-10 font-med bold"><%= "#{coin.price_detail["MKTCAP"]}" %></div>
-              <div class="font-med align-right bold pad-top-10 arimo mid-col"><%= "#{coin.price_detail["PRICE"]}"%>
+              <div class="mid-col font-med align-right bold pad-top-10 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
               </div>
-              <div class="right-col font-med align-right pad-right-5 pad-top-5 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
+              <div class="right-col font-med align-right pad-right-5 pad-top-5 margin-left-20 arimo <%= coin.price_detail_raw["CHANGE24HOUR"] > 0 ? "price-up" : "price-down" %>">
                 <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
                 </div>
                 <div class=""><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>
