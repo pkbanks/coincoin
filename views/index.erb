@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/clear.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/custom.css">
 
   <title>CryptoMarkets</title>
@@ -11,17 +12,17 @@
   <div class="container">
     <header>header</header>
     <main>
-      <div class="wrapper">
+      <div class="wrapper arimo">
         <ul>
           <% @data.each do |coin| %>
             <li class="row">
-              <div class="left-col rows-2">
-                <div class="font-large"><%= "#{coin.data["Name"]}" %></div>
+              <div class="left-col rows-2 pad-left-20">
+                <div class="font-large bold"><%= "#{coin.data["Name"]}" %></div>
                 <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
               </div>
-              <div class="font-med align-right bold pad-top-20"><%= "#{coin.price_detail["PRICE"]}"%>
+              <div class="font-med align-right bold pad-top-25 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
               </div>
-              <div class="font-small align-right pad-top-10 pad-right-20">
+              <div class="font-med align-right pad-right-20 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
                 <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
                 </div>
                 <div class="pad-top-10"><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>

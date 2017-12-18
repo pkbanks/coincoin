@@ -1,5 +1,5 @@
 body {
-
+  
 }
 
 header {
@@ -7,12 +7,16 @@ header {
 }
 
 main {
-  background-color: #e6ffcc;
-  font-size: 70px;
+  font-size: 50px;
 }
 
+.arimo {
+  font-family: 'Arimo', sans-serif;
+}
+
+
 .row {
-  padding: 25px 20px;
+  /*padding: 25px 20px;*/
 }
 
 .wrapper li.row {
@@ -43,12 +47,20 @@ footer {
 li {
 }
 
+.margin-left-20 {
+  margin-left: 20px;
+}
+
 .pad-top-10 {
   padding-top: 10px;
 }
 
 .pad-top-20 {
   padding-top: 20px;
+}
+
+.pad-top-25 {
+  padding-top: 25px;
 }
 
 .pad-right-10 {
@@ -59,11 +71,26 @@ li {
   padding-right: 20px;
 }
 
-li:nth-child(odd) {
-    background-color: #FFF;
+.pad-left-20 {
+  padding-left: 20px;
 }
+
+li:nth-child(odd) {
+  background-color: #FFF;
+}
+
 li:nth-child(even) {
-    background-color: #ccffcc;
+  background-color: #cce6ff;
+  }
+
+.price-up {
+  background-color: green;
+  color: #FFF;
+}
+
+.price-down {
+  background-color: #cc2900;
+  color: #FFF;
 }
 
 
