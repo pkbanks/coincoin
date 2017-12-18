@@ -46,6 +46,7 @@ div.wrapper {
 li.row {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
+  height: 120%;
 }
 
 .left-col {
@@ -111,7 +112,7 @@ li:nth-child(even) {
 
 
 .row {
-  border-bottom: 3px solid #595959;
+  border-bottom: 2px solid  #e6e6e6;
 }
 
 .bold {
