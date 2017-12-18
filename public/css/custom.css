@@ -1,13 +1,37 @@
 body {
-  
 }
 
 header {
+  background-color: #0066ff;
+  color: #FFF;
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 5px solid #FFF;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+
+footer {
   background-color: blue;
+}
+
+.container {
+  min-width: 640px;
 }
 
 main {
   font-size: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+div.wrapper {
+  position: relative;
+  top: 110px;
 }
 
 .arimo {
@@ -19,7 +43,7 @@ main {
   /*padding: 25px 20px;*/
 }
 
-.wrapper li.row {
+li.row {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
 }
@@ -37,14 +61,6 @@ main {
 .rows-2 {
   grid-row-start: 1;
   grid-row-end: 2;
-}
-
-
-footer {
-  background-color: blue;
-}
-
-li {
 }
 
 .margin-left-20 {
