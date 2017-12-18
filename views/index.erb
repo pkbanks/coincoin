@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo|Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/custom.css">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CryptoMarkets</title>
 </head>
 <body>
@@ -18,16 +19,16 @@
         <ul>
           <% @data.each do |coin| %>
             <li class="row">
-              <div class="left-col rows-2 pad-left-20">
+              <div class="left-col rows-2 pad-left-20 pad-top-5 pad-bottom-5">
                 <div class="font-large bold"><%= "#{coin.data["Name"]}" %></div>
                 <div class="font-small"><%= "#{coin.data["CoinName"]}" %></div>
               </div>
-              <div class="font-med align-right bold pad-top-25 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
+              <div class="font-med align-right bold pad-top-15 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
               </div>
-              <div class="font-med align-right pad-right-20 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
+              <div class="font-med align-right pad-right-10 pad-top-5 margin-left-20 arimo <%= coin.price_detail["PRICE"].to_f > 0 ? "price-up" : "price-down" %>">
                 <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
                 </div>
-                <div class="pad-top-10"><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>
+                <div class=""><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>
               </div>
             </li>
           <% end %>

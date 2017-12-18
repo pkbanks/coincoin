@@ -4,9 +4,9 @@ body {
 header {
   background-color: #0066ff;
   color: #FFF;
-  height: 100px;
+  height: 55px;
   text-align: center;
-  font-size: 80px;
+  font-size: 50px;
   width: 100%;
   position: fixed;
   border-bottom: 5px solid #FFF;
@@ -20,23 +20,28 @@ footer {
 }
 
 .container {
-  min-width: 640px;
+  /*min-width: 320px;*/
 }
 
 main {
-  font-size: 50px;
+  font-size: 20px;
   position: absolute;
   width: 100%;
 }
 
 div.wrapper {
   position: relative;
-  top: 110px;
+  top: 60px;
 }
 
 .arimo {
   font-family: 'Arimo', sans-serif;
 }
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 
 .row {
@@ -46,7 +51,7 @@ div.wrapper {
 li.row {
   display: grid;
   grid-template-columns: 3fr 2fr 2fr;
-  height: 120%;
+  /*height: 150%;*/
 }
 
 .left-col {
@@ -68,8 +73,15 @@ li.row {
   margin-left: 20px;
 }
 
+.pad-top-5 {
+  padding-top: 5px;
+}
 .pad-top-10 {
   padding-top: 10px;
+}
+
+.pad-top-15 {
+  padding-top: 15px;
 }
 
 .pad-top-20 {
@@ -90,6 +102,10 @@ li.row {
 
 .pad-left-20 {
   padding-left: 20px;
+}
+
+.pad-bottom-5 {
+  padding-bottom: 5px;
 }
 
 li:nth-child(odd) {
