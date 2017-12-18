@@ -61,12 +61,17 @@ li.row {
 
 .mid-col {
   grid-column-start: 2;
-  grid-column-start: 3;
+  grid-column-end: 3;
 }
 
 .rows-2 {
   grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.right-col {
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .margin-left-20 {
@@ -164,7 +169,7 @@ li:nth-child(even) {
   
   li.row {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr 2fr 2fr;
     /*height: 150%;*/
   }
 
@@ -173,9 +178,19 @@ li:nth-child(even) {
     grid-column-end: 3;
   }
 
-  .mid-col {
+  .col-2 {
     grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .mid-col {
     grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .right-col {
+    grid-column-start: 5;
+    grid-column-end: 6;
   }
 
   .med-screen {
