@@ -28,9 +28,9 @@
               <div class="mid-col font-med align-right bold pad-top-10 arimo"><%= "#{coin.price_detail["PRICE"]}"%>
               </div>
               <div class="right-col font-med align-right pad-right-5 pad-top-5 margin-left-20 arimo <%= coin.price_detail_raw["CHANGE24HOUR"] > 0 ? "price-up" : "price-down" %>">
-                <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEDAY"])}" %>
+                <div><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGE24HOUR"])}" %>
                 </div>
-                <div class=""><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCTDAY"])}" %> %</div>
+                <div class=""><%= "#{sprintf('%.2f', coin.price_detail_raw["CHANGEPCT24HOUR"])}" %> %</div>
               </div>
             </li>
           <% end %>
